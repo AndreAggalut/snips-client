@@ -13,7 +13,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
     <!--        -->
 
-    <!-- he.js -->
+    <!-- he.js encodes html -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/he/1.2.0/he.js"
       integrity="sha256-dsVU1bv9Ay/mIFlQdqUKvqUSS5y9Tp/+aslKT4Va7Os="
@@ -24,24 +24,11 @@
     <script defer src="../index.js" type="module"></script>
   </head>
   <body>
-    <section id="snippets">
-      <div class="snip">
-        <div class="text">
-          <h2>comment.js</h2>
-          <p>A single line comment</p>
-        </div>
-      </div>
-      <div class="snip">
-        <div class="text">
-          <h2>comment.js</h2>
-          <p>A multi line comment</p>
-        </div>
-        <pre>
-          <code>
-            //JavaScript is fun
-          </code>
-        </pre>
-      </div>
-    </section>
+    <form id="search-bar">
+      <label for="search-text">🔍</label>
+      <input type="text" id="search-text" name="search-text" />
+      <button type="submit">Search</button>
+    </form>
+    <section id="snippets"></section>
   </body>
 </html>
